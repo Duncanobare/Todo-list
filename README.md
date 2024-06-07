@@ -1,66 +1,25 @@
-## Foundry
+TodoList Smart Contract
 
-**Foundry is a blazing fast, portable and modular toolkit for Ethereum application development written in Rust.**
+//Description
 
-Foundry consists of:
+The smart contract provides a decentralized way to manage tasks. Users ca add Tasks, view task details, mark tasks as complete and calculate the time taken by a particular task.
 
--   **Forge**: Ethereum testing framework (like Truffle, Hardhat and DappTools).
--   **Cast**: Swiss army knife for interacting with EVM smart contracts, sending transactions and getting chain data.
--   **Anvil**: Local Ethereum node, akin to Ganache, Hardhat Network.
--   **Chisel**: Fast, utilitarian, and verbose solidity REPL.
+//Features
 
-## Documentation
+#Add TAsk: users can add tasks with a name, start and end times, and completion status.
 
-https://book.getfoundry.sh/
+#View Task Details: individual task details can be viewed by the user including the name, completion status and the time it ends .
 
-## Usage
+#Mark as Complete: users can mark particular tasks as complete, updating their completion status.
 
-### Build
+#Calculate Time Taken: users can calculate the time taken by a particular task to be completed.
 
-```shell
-$ forge build
-```
+//Deployment
+To deploy the TodoList smart contract, follow these steps:
 
-### Test
+#Deploy the contract to your preferred blockchain network, such as Ethereum.
 
-```shell
-$ forge test
-```
+#Interact with the deployed contract using a compatible wallet or smart contract interaction tool.
 
-### Format
-
-```shell
-$ forge fmt
-```
-
-### Gas Snapshots
-
-```shell
-$ forge snapshot
-```
-
-### Anvil
-
-```shell
-$ anvil
-```
-
-### Deploy
-
-```shell
-$ forge script script/Counter.s.sol:CounterScript --rpc-url <your_rpc_url> --private-key <your_private_key>
-```
-
-### Cast
-
-```shell
-$ cast <subcommand>
-```
-
-### Help
-
-```shell
-$ forge --help
-$ anvil --help
-$ cast --help
-```
+//License
+This project is licensed under the MIT License.

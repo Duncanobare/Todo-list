@@ -1,6 +1,8 @@
+# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
 [profile.default]
 src = "src"
 out = "out"
 libs = ["lib"]
 
-# See more config options https://github.com/foundry-rs/foundry/blob/master/crates/config/README.md#all-options
+[profile.dependencies]
+forge-std = { git = "https://github.com/foundry-rs/forge-std", tag = "v1.0.0" }
